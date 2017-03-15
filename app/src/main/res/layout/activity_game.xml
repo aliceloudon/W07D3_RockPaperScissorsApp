@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.codeclan.rockpaperscissorsapp.GameActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/rock_button"
+        android:text="rock"
+        android:onClick="setRockButtonClicked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:id="@+id/paper_button"
+        android:text="paper"
+        android:onClick="setPaperButtonClicked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:id="@+id/scissors_button"
+        android:text="scissors"
+        android:onClick="setScissorsButtonClicked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>
