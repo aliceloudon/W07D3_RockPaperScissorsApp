@@ -18,7 +18,7 @@ public class RockPaperScissors {
 
     public void setUpAnswers(){
         String[] answersToAdd = {
-                "Rock", "Paper", "Scissors"
+                "rock", "paper", "scissors"
         };
 
         for( String answer : answersToAdd )
@@ -41,7 +41,22 @@ public class RockPaperScissors {
         return answer;
     }
 
-
-
+    public String whoWon(String userInput, String computerInput){
+            if (userInput.equals(computerInput))
+                return "It's a draw!";
+            else if ((userInput.equals("rock")) && (computerInput.equals("paper")))
+                return "App wins!";
+            else if ((userInput.equals("rock")) && (computerInput.equals("scissors")))
+                return "You win!";
+            else if ((userInput.equals("paper")) && (computerInput.equals("rock")))
+                return "You win!";
+            else if ((userInput.equals("paper")) && (computerInput.equals("scissors")))
+                return "App wins!";
+            else if ((userInput.equals("scissors")) && (computerInput.equals("paper")))
+                return "You win!";
+            else if ((userInput.equals("scissors")) && (computerInput.equals("rock")))
+                return "App wins!";
+            else return "You're an idiot";
+    }
 
 }
